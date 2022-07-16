@@ -1,0 +1,109 @@
+body{
+    background-image: linear-gradient(rgb(37, 37, 156),lightblue);
+    
+    background-size: contain;
+    margin: 10px 150px 150px 150px;
+    background-color: lightgrey;
+    border: 2px;
+}
+main{
+    margin-top: 100px;
+}
+header{
+    display: flex;
+    justify-content: left;
+    align-content: space-between;
+    padding:10px
+}
+.logo
+{
+    margin-right: 30px;
+    box-shadow: 5px 5px 30px black;
+}
+nav{
+    display: flex;
+    justify-content:center;
+    background-color: black;
+    position: sticky;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    top: 0;
+}
+nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 110%;
+    font-weight: 700;
+}
+nav a:after{
+    content: '';
+    position: absolute;
+    background-color: rgb(208, 52, 52);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 1s;
+}
+nav a:hover:after{
+    width: 100%;
+}
+p{
+    margin: 10px 20px 0px 20px;
+    text-align: justify;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div h1{
+    font-size: 80px;
+    margin-top: 30px;  
+    text-shadow: 4px 4px 5px rgb(70, 69, 69);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-thickness: 10px;
+    text-underline-offset: 5px;
+    text-decoration-color: rgb(53, 118, 175);
+}
+button{
+    margin: 10px 0px 25px 20px;
+    border-radius: 2px;
+    border: 2px;
+    background-color: rgb(72, 133, 174);
+    color: rgb(216, 255, 242);
+    padding: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(24, 84, 125);
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    margin: 10px;
+}
+.container{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 5fr;
+}
+.image img,.logo img{
+    margin: 10px;
+    padding: 5px;
+    border: 5px solid white;
+}
+.box
+{
+    background-color: inherit;
+    border-radius: 5px;
+}
+
+footer a img:hover{
+    width: 40px;
+    margin-top: -10px;
+}
